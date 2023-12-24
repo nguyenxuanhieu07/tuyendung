@@ -1,0 +1,169 @@
+.footer {
+	padding: 60px 0;
+	position: relative;
+
+	&-logo {
+		width: 164px;
+		aspect-ratio: 164/57;
+		margin-bottom: 15px;
+	}
+
+	&-title {
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	&-desc {
+		margin-bottom: 5px;
+	}
+
+	&-title-col {
+		font-weight: 700;
+		margin-bottom: 19px;
+		text-transform: uppercase;
+	}
+
+	&-list-info {
+		padding-left: 0;
+		list-style: none;
+		margin-bottom: 0;
+
+		.item {
+			display: flex;
+			align-items: baseline;
+
+			img {
+				margin-right: 12px;
+			}
+
+			&:not(:last-child) {
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	&-social {
+		list-style: none;
+		display: flex;
+		padding-left: 0;
+		margin-bottom: 0;
+
+		.item {
+			position: relative;
+
+			&:not(:last-child) {
+				margin-right: 20px;
+			}
+
+			&:hover {
+				.tooltip {
+					top: -45px;
+					opacity: 1;
+					visibility: visible;
+					pointer-events: auto;
+				}
+			}
+			&.face:hover{
+				.tooltip {
+					background: #1877F2;
+					&::before{
+						background: #1877F2;
+					}
+				}
+			}
+			&.you:hover{
+				.tooltip {
+					background: #F13B3B;
+					&::before{
+						background: #F13B3B;
+					}
+				}
+			}
+			&.tik:hover{
+				.tooltip {
+					background: $black;
+					&::before{
+						background: $black;
+					}
+				}
+			}
+		}
+	}
+
+	&-icon {
+		width: 36px;
+		height: 36px;
+		display: block;
+		border-radius: 50%;
+		text-align: center;
+		background: $light;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	.tooltip {
+		position: absolute;
+		top: 0;
+		left: -20px;
+		font-size: 14px;
+		background: #fff;
+		color: #fff;
+		padding: 5px 8px;
+		border-radius: 5px;
+		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+		opacity: 0;
+		pointer-events: none;
+		transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+		&::before {
+			position: absolute;
+			content: "";
+			height: 8px;
+			width: 8px;
+			background: #fff;
+			bottom: -3px;
+			left: 50%;
+			transform: translate(-50%) rotate(45deg);
+			transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		}
+	}
+
+
+}
+
+.text-green {
+	color: $green;
+	font-weight: 600;
+	display: block;
+	margin-bottom: 0;
+}
+
+.page-footer {
+	position: relative;
+}
+
+.background-radient-footer-l {
+	position: absolute;
+	top: auto;
+	left: 0;
+	bottom: 0;
+	width: 50%;
+	height: 200%;
+	z-index: -1;
+	background: radial-gradient(circle at 15% 175%, #a6d4cd 0, #bae0d7 50%, rgba(186, 224, 215, 0) 75%);
+	opacity: .45;
+}
+
+.background-radient-footer-r {
+	position: absolute;
+	top: auto;
+	left: 40%;
+	bottom: 0;
+	width: 60%;
+	height: 200%;
+	z-index: -1;
+	background: radial-gradient(circle at 70% 180%, #a6d4cd 0, #bae0d7 50%, rgba(186, 224, 215, 0) 75%);
+	opacity: .45;
+}

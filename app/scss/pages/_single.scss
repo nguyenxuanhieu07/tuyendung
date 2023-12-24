@@ -1,0 +1,291 @@
+.single-job {
+	.prominent-location {
+		margin-bottom: 70px;
+
+		.slick-dots {
+			display: none !important;
+		}
+	}
+
+	.entry {
+		font-size: 16px;
+		line-height: 1.6;
+
+		h2 {
+			color: #21937F;
+			font-size: 20px;
+			position: relative;
+			padding-left: 15px;
+			font-weight: 700;
+			margin-bottom: 15px;
+
+			&::before {
+				content: '';
+				background: linear-gradient(180deg, rgba(134, 226, 163, 1) 0%, rgba(33, 147, 127, 1) 100%);
+				width: 6px;
+				height: 20px;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+			}
+		}
+
+		ul {
+			padding-left: 15px;
+
+			li {
+				&:not(:last-child) {
+					margin-bottom: 10px;
+				}
+
+				&::marker {
+					color: $green;
+				}
+			}
+		}
+
+		&-title {
+			color: #21937F;
+			font-size: 20px;
+			position: relative;
+			padding-left: 15px;
+			font-weight: 700;
+			margin-bottom: 15px;
+
+			&::before {
+				content: '';
+				background: linear-gradient(180deg, rgba(134, 226, 163, 1) 0%, rgba(33, 147, 127, 1) 100%);
+				width: 6px;
+				height: 20px;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}
+
+.box-info {
+	padding: 20px;
+	box-shadow: 0 3px 25px rgba($color: #21937F, $alpha: .15);
+	border-radius: 15px;
+	margin-bottom: 27px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: $light;
+
+	.item-child {
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+
+	.info-item {
+		font-size: 16px;
+
+		.item-img {
+			margin-right: 10px;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+	}
+
+	.btn-bg {
+		padding: 12px 43px;
+	}
+}
+
+.box-shadow {
+	box-shadow: 0 3px 25px rgba($color: #21937F, $alpha: .15);
+}
+
+.box-toc {
+	padding: 15px;
+	border-radius: 15px;
+	background: #fff;
+	position: sticky;
+	top: 130px;
+
+	.list-title {
+		list-style: none;
+		padding: 0;
+		margin-bottom: 0;
+
+		.item {
+			font-size: 15px;
+
+			&:not(:first-child):not(:last-child) {
+				padding: 15px 0;
+			}
+
+			&:not(:last-child) {
+				border-bottom: 1px solid #F5F5F5;
+			}
+
+			&:first-child {
+				padding-bottom: 15px;
+			}
+
+			&:last-child {
+				padding-top: 15px;
+			}
+		}
+
+		a {
+			color: black;
+
+			&:hover {
+				color: $green;
+				font-weight: 700;
+			}
+		}
+
+		.active {
+			a {
+				color: $green;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.box-content {
+	padding: 15px;
+	border-radius: 15px;
+	margin-bottom: 60px;
+	background: $light;
+}
+
+
+
+.inner-title {
+	color: #21937F;
+	font-size: 24px;
+	position: relative;
+	padding-left: 15px;
+	font-weight: 700;
+	margin-bottom: 22px;
+
+	&::before {
+		content: '';
+		background: linear-gradient(180deg, rgba(134, 226, 163, 1) 0%, rgba(33, 147, 127, 1) 100%);
+		width: 6px;
+		height: 20px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateY(3px);
+	}
+}
+
+.col-item {
+	padding: 0 7.5px;
+}
+
+.list-department-top {
+	margin-bottom: 13px;
+
+	.item {
+		width: 100%;
+		aspect-ratio: 29/21;
+		border-radius: 30px;
+		overflow: hidden;
+
+		img {
+			object-fit: cover;
+			object-position: 50% 50%;
+			-o-object-position: 50% 50%;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.slick-next {
+		right: 10px;
+		width: 36px;
+		height: 36px;
+
+		&::before {
+			font-size: 28px;
+		}
+	}
+
+	.slick-prev {
+		left: 10px;
+		width: 36px;
+		height: 36px;
+		z-index: 2;
+
+		&::before {
+			font-size: 28px;
+		}
+	}
+}
+
+.list-department-bottom {
+	display: flex;
+	margin-bottom: 30px;
+
+	.item {
+		width: 100%;
+		aspect-ratio: 11/8;
+		overflow: hidden;
+
+		img {
+			border-radius: 10px;
+			object-fit: cover;
+			object-position: 50% 50%;
+			-o-object-position: 50% 50%;
+			width: 100%;
+			height: 100%;
+		}
+
+		&:not(:first-child):not(:last-child) {
+			padding: 0 6.5px;
+		}
+
+		&:first-child {
+			padding-right: 6.5px;
+		}
+
+		&:last-child {
+			padding-left: 6.5px;
+		}
+	}
+
+	.slick-arrow {
+		display: none !important;
+	}
+}
+
+.banner-side {
+	margin-bottom: 30px;
+}
+
+.side-title {
+	font-size: 25px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+
+.list-job-side {
+	.post {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.boder-row {
+	border-bottom: 1px solid $green;
+	margin-bottom: 50px;
+}

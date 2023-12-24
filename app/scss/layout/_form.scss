@@ -1,0 +1,129 @@
+.form {
+	&-job {
+		padding: 19px 25px;
+		border-radius: 30px;
+		background: $green;
+		width: 450px;
+		z-index: 3;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		overflow: hidden;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: url(../images/bacground-form.png) no-repeat;
+			top: 0;
+			left: 0;
+			background-size: cover;
+			z-index: -1;
+			opacity: .2;
+		}
+	}
+
+	&-img {
+		width: 100%;
+		aspect-ratio: 400/273;
+		position: relative;
+		margin-bottom: -35px;
+	}
+
+	&-title {
+		font-size: 22px;
+		font-weight: 700;
+		color: $light;
+		text-align: center;
+		margin-bottom: 8px;
+	}
+
+	&-desc {
+		font-size: 16px;
+		color: $light;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	&-custom {
+		padding: 0 7.5px;
+		margin-bottom: 15px;
+		position: relative;
+
+		&-item {
+			height: 45px;
+			border-radius: 10px;
+		}
+	}
+
+	&-btn {
+		font-size: 16px;
+		font-weight: 700;
+		color: $light;
+		background: #F13B3B;
+		padding: 12px 30px;
+		border-radius: 30px;
+		margin: 0 auto;
+
+		&:hover {
+			color: $light;
+		}
+	}
+
+	&-icon-upload {
+		position: absolute;
+		top: 50%;
+		left: 92%;
+		transform: translateY(-50%);
+	}
+
+	&-recruitment {
+		background: $green;
+		padding: 19px 25px;
+		border-radius: 10px;
+		overflow: hidden;
+
+		.form-btn {
+			padding: 12px 48px;
+		}
+		.form-title{
+			font-size: 44px;
+			text-transform: uppercase;
+			font-style: italic;
+			text-align: center;
+			margin-bottom: 25px;
+			position: relative;
+			span{
+				display: block;
+			}
+			&::before{
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background: url(../images/cham-bi.png) no-repeat;
+				background-size: contain;
+			}
+		}
+	}
+	&-contact{
+		.form-custom-item{
+			border: 1px solid $green;
+		}
+		.btn-submit{
+			background: #F13B3B;
+			color: $light;
+			font-size: 15px;
+			font-weight: 700;
+			padding: 12px 0;
+			display: block;
+			border-radius: 10px;
+			width: 100%;
+			text-align: center;
+		}
+	}
+}

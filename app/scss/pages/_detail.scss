@@ -1,0 +1,49 @@
+.page-single {
+    .section-title {
+        margin-bottom: 20px;
+    }
+
+    .background-radient-top {
+        background: radial-gradient(circle at 30% 5%, #8de6a9 0, #dbf7e4 20%, rgba(255, 255, 255, 0) 40%);
+    }
+}
+
+.page-meta-top {
+    padding-bottom: 12px;
+    border-bottom: 1px solid $green;
+    margin-bottom: 25px;
+}
+
+.entry {
+    font-size: 16px;
+    line-height: 1.6;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 13px;
+        margin-bottom: 25px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 30%;
+            height: 2px;
+            background: $green;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    img {
+        border-radius: 30px;
+        margin-bottom: 28px;
+    }
+}
+
+.row-content {
+    border-bottom: 1px solid $green;
+    padding-bottom: 60px;
+    margin-bottom: 35px;
+}

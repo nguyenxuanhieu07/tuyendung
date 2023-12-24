@@ -1,0 +1,29 @@
+.page-404 {
+	margin-bottom: 100px;
+
+	.img-404 {
+		margin-bottom: 25px;
+	}
+
+	.text-404 {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 25px;
+	}
+
+	.btn-link {
+		display: block;
+		background: $green;
+		color: $light;
+		font-size: 18px;
+		font-weight: 700;
+		text-align: center;
+		border-radius: 30px;
+		padding: 12px 30px;
+		width: max-content;
+		margin: 0 auto 15px auto;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}

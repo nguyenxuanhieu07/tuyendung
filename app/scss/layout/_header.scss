@@ -1,0 +1,80 @@
+.header {
+	box-shadow: 0 3px 15px rgba($color: #000000, $alpha: .15);
+	&-top {
+		background: $green;
+		color: $light;
+		padding: 10px 0;
+		text-align: center;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		font-size: 15px;
+		&-title {
+			margin-bottom: 0;
+
+			a {
+				color: $light;
+				text-decoration: underline;
+			}
+		}
+	}
+	&-bottom{
+		padding: 11px 0;
+	}
+	&-menu {
+		padding: 0;
+		.menu-item {
+			&:not(:first-child):not(:last-child) {
+				.nav-link {
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+			}
+
+			&:first-child {
+				.nav-link {
+					padding-right: 20px;
+				}
+			}
+
+			&:last-child {
+				.nav-link {
+					padding-left: 20px;
+				}
+			}
+			&:hover {
+				&::after,
+				&::before{
+					width: 100%;
+				}
+			}
+			&::before {
+				margin-left: auto;
+			}
+			&::before,
+			&::after{
+				content: '';
+				width: 0%;
+				height: 2px;
+				background: $green;
+				display: block;
+				transition: 0.5s;
+			}
+		}
+
+		.nav-link {
+			color: $black;
+
+			&:hover {
+				color: $green;
+			}
+		}
+	}
+}
+
+.header-sticky {
+	position: sticky;
+	top: 0;
+	background: $light;
+	z-index: 4;
+	transition: transform 0.5s ease;
+}
